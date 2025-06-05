@@ -102,3 +102,29 @@ hr{
     height: 2px;
     opacity: 30%;
 }
+
+
+@media (max-width: 600px) {
+  .task-input h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .input{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+.priority,.update, .delete {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .priority{
+    margin-left: 0px;
+  }
+  #Priority{
+    width: 33%;
+  }
+  button{
+    width: 40%;
+  }
+}
