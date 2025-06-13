@@ -14,6 +14,19 @@ function validateForm() {
     }
 
 
+document.querySelectorAll(".edit-button").forEach(button => {
+    button.addEventListener("click", function() {
+        let inputField = this.closest("li").querySelector(".input");
+        let prio = this.closest("li").querySelector(".priority");
+        if (inputField) {
+            inputField.removeAttribute("readonly");
+            inputField.focus();
+            prio.classList.add("edit-todo");
+            inputField.classList.add("edit-todo");
+        }
+    });
+});
+
 document.querySelectorAll(".filter a").forEach(filterLink => {
     filterLink.addEventListener("click", function (event) {
         event.preventDefault();
