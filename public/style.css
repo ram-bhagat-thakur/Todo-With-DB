@@ -102,7 +102,10 @@ hr{
     height: 2px;
     opacity: 30%;
 }
-
+.edit-todo{
+    background-color: rgb(220, 192, 220);
+    color: red;
+}
 
 @media (max-width: 600px) {
   .task-input h1 {
