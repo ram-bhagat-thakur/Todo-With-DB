@@ -19,6 +19,7 @@ document.querySelectorAll(".edit-button").forEach(button => {
         let inputField = this.closest("li").querySelector(".input");
         let prio = this.closest("li").querySelector(".priority");
         if (inputField) {
+            alert("Change your content (Task & Priority) and then click on update to save the Edited task!");
             inputField.removeAttribute("readonly");
             inputField.focus();
             prio.classList.add("edit-todo");
