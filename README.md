@@ -48,12 +48,15 @@ npm start
 ### 📁 Project Structure
 
 ```text
-ToDo-App/
-├── public/             # Static assets
+Todo-With-DB/
+├── public/             # Static assets (CSS, JS)
+│   └── script.js       # Client-side logic
 ├── views/              # EJS templates
-├── index.js            # Entry point
+│   └── list.ejs        # Main task list interface
+├── index.js            # Server entry point
 ├── package-lock.json   # Dependency lock file
 ├── package.json        # Project metadata and dependencies
+├── .gitignore          # Files to ignore in version control
 └── README.md           # Project documentation
 ```
 
